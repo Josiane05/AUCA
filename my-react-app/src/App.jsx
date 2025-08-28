@@ -2,14 +2,19 @@ import "./index.css"
 
 export default function App() {
   const [newItem, setNewItem] = useState("")
-  //setnewItem("sdfsdf")
+  const [todos, setTodos] =useState([])
+
+  function handleSubmit(e) {
+    e.preventDefault()
+  }
+
   return (
     <>
          <form className="new-item-form">
     <div className="form-row">
       <label htmlFor="item">New Item</label>
-      <input type="text" id="item"/>
-      </div>
+      <input value type="text" id="item"/>
+    </div>
       <botton className="btn">add</botton>
          </form> 
   <h1 className="header">Todo List</h1>.
