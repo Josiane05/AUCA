@@ -9,11 +9,11 @@ export default function App() {
 
       setTodos([
       ...todos,
-      { id: crypto.randomUUDI(), title: newItem, completed: false },
+      { id: crypto.randomUUID(), title: newItem, completed: false },
     ])
      setTodos([
       ...todos,
-      { id: crypto.randomUUDI(), title: newItem, completed: false },
+      { id: crypto.randomUUID(), title: newItem, completed: false },
     ])
   }
 
