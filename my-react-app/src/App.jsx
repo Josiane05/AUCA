@@ -6,7 +6,14 @@ export default function App() {
 
   function handleSubmit(e) {
     e.preventDefault()
+
+    setTodos([
+      ...todos,
+      { id: crypto.randomUUDI(), title: newItem, completed: false },
+    ])
   }
+
+  console.log(todos)
 
   return (
     <>
