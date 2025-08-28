@@ -1,6 +1,8 @@
 import "./index.css"
 
 export default function App() {
+  const [newItem, setNewItem] = useState("")
+  //setnewItem("sdfsdf")
   return (
     <>
          <form className="new-item-form">
